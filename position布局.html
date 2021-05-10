@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=" utf-8">
+    <title>三栏布局</title>
+</head>
+<body>
+    <style type="text/css">
+        .parents{
+            display: flex;
+            width: 600px;
+            height: 200px;
+            background-color: gray;
+        }
+        .left{
+            flex-shrink: 0;
+            width: 200px;
+           
+            background-color: brown;
+            
+        }
+        .center{
+            width: 200px;
+            flex-grow: 1;
+            background-color: chocolate;
+        }
+        .right{
+            width: 200px;
+            flex-shrink: 0;
+           
+            background-color: cadetblue;
+        }
+        
+    </style>
+
+    <div class="parents">
+        <div class="left">左</div>
+        <div class="center">中</div>
+        <div class="right">右</div>
+    </div>
+</body>
+</html>
